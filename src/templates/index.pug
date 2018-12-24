@@ -1,0 +1,23 @@
+extends _layout/layout
+
+//- Các giá trị mặc định cho trang web
+block variables
+	- var title = 'Home'
+	- var description = 'Description for home page'
+	- var bodyclass = 'home'
+
+//- Phần khai báo body
+block body
+	.container
+		.row
+			.col-sm-6.p-5
+				.form-group
+					label(for="a") Hãng A
+					input#a(type="radio", name="chondi" value="1" checked) 
+					label(for="b") Hãng B
+					input#b(type="radio", name="chondi" value="2")
+				.form-group
+					input#canvay(type="number", value="1000")
+				.form-group
+					input#duatruoc(type="number", value="2000")
+
